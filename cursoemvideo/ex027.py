@@ -1,0 +1,5 @@
+n = str(input('Digite seu nome completo: ')).strip()
+print('Muito prazer em te conhecer !')
+f = n.split()
+print('Seu primeiro nome é {}'.format(f[0]))
+print('Seu ultimo nome é {}'.format(f[len(f)-1]))
