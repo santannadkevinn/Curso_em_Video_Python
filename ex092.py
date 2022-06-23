@@ -18,7 +18,7 @@ while True:
         pessoa['ctps'] = ctps
     contra = pessoa['contratação'] = int(input('Ano de Contratação: '))
     salario = pessoa['salario'] = float(input('Salário: R$ '))
-    aposentadoria = pessoa['aposentadoria'] = contra + 35
+    aposentadoria = pessoa['aposentadoria'] = contra + 35 - date.today().year  
     print('-='*20)
     print(f'Nome tem o valor {pessoa["nome"]}')
     sleep(0.5)
